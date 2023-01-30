@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // List of cities for the first question
+            let cities = ['Ottawa', 'London', 'Canberra', 'Wellington', 'Paris'];
+            // Run script once DOM is loaded
+            document.addEventListener('DOMContentLoaded', function(){
+                // Processing the correct answer of the first question
+                document.querySelector('#Ottawa').addEventListener('click', function()
+                {
+                   resetBackgroundButtons()
+                   document.getElementById('Ottawa').style.backgroundColor = 'green';
+                   document.querySelector('#feedback1').innerHTML = 'Correct';
+                });
+                // Зrocessing the wrong answer to the first question
+                for (let i = 1; i < cities.length; i++) {
+                    document.querySelector('#' + cities[i]).addEventListener('click', function()
+                    {
+                        resetBackgroundButtons()
+                        document.getElementById(cities[i]).style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = 'Incorrect';
+                    });
+                }
+                // Checking the second question
+                document.querySelector('#checkAnswer').addEventListener('click', function()
+                {
+                    let input = document.querySelector('input');
+                    if (input.value === 'Barack Obama') {
+                        input.style.backgroundColor = 'green'
+                        document.querySelector('#feedbacak2').innerHTML = 'Correct';
+                    } else {
+                        input.style.backgroundColor = 'red'
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect';
+                    }
+                });
+            });
+            // Reset background color
+            function resetBackgroundButtons() {
+                var defaultBackgroundColor = '#d9edff';
+                for (let i = 0; i < cities.length; i++) {
+                    document.getElementById(cities[i]).style.backgroundColor = defaultBackgroundColor;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the capital of New Zealand?</h3>
+                <button id="Ottawa" type="button">Ottawa</button>
+                <button id="London" type="button">London</button>
+                <button id="Canberra" type="button">Canberra</button>
+                <button id="Wellington" type="button">Wellington</button>
+                <button id="Paris" type="button">Paris</button>
+
+                <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Who was the 44th president of the USA?</h3>
+                    <input type="text"></input>
+                    <button id="checkAnswer">Check Answer</button>
+
+                    <p id="feedback2"></p>
+            </div>
+        </div>
+    </body>
+</html>

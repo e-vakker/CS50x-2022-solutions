@@ -1,0 +1,55 @@
+sort1 uses: Bubble sort
+real    0m0.157s random5000
+real    0m0.070s reversed5000
+real    0m0.054s sorted5000
+
+Sorted50000
+real    0m2.032s
+user    0m0.053s
+sys     0m0.144s
+
+Random50000
+real    0m8.411s
+user    0m6.958s
+sys     0m0.155s
+
+How do you know?: Best time for sorted.
+
+sort2 uses: Merge sort
+real    0m0.043s random5000
+real    0m0.021s reversed5000
+real    0m0.023s sorted5000
+
+Sorted50000
+real    0m2.549s
+user    0m0.047s
+sys     0m0.149s
+
+Random50000
+real    0m1.745s
+user    0m0.043s
+sys     0m0.169s
+
+How do you know?: Best time for Random
+
+sort3 uses: Selection sort
+real    0m0.062s random5000
+real    0m0.050s reversed5000
+real    0m0.070s sorted5000
+
+Sorted50000
+real    0m6.363s
+user    0m2.624s
+sys     0m0.185s
+
+Random50000
+real    0m5.371s
+user    0m2.570s
+sys     0m0.158s
+
+How do you know?: Worst time for sorted and random
+
+
+Selection sort
+Bubble sort
+merge sort

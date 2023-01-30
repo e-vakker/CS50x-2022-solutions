@@ -1,0 +1,137 @@
+html {
+  /* make sure we use up the whole viewport */
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+  /* make sure we use the full width but allow for more height */
+  width: 100%;
+  min-height: 100vh; /* this helps with the sticky footer */
+}
+
+main {
+  min-height: calc(100vh - 2.5em); /* this leaves space for the sticky footer */
+}
+
+.header {
+  text-align: left;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  text-align: center;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+}
+
+.cloud {
+  opacity: 1;
+  font-size: .95rem;
+  position: relative;
+  color: black;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 10s;
+}
+
+@-webkit-keyframes run {
+  0% {
+    left: -120%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+.nav {
+  border-bottom: 1px solid black;
+  padding: 0.0rem 0.5rem 0.5rem 0.5rem;
+}
+
+.nav-link {
+  color: black;
+  font-size: .75rem;
+  letter-spacing: .03rem;
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: black;
+  border: 1px solid black;
+}
+
+.img-fluid {
+  opacity: 1;
+  background: black;
+}
+
+.text-on-image {
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.text {
+  text-align: center;
+  padding: 1rem 3rem 3rem 3rem;
+}
+
+.bigtext {
+  text-align: center;
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: .75rem;
+  border-top: 1px solid black;
+  width: 100%;
+  position:relative;
+  bottom:0;
+}
+
+.header-for-page {
+  text-align: center;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.contact-form {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0rem 5rem 0rem 5rem;
+}
+
+.images {
+  padding: 3rem 0rem 3rem 0rem;
+}
+
+.images2 {
+  padding: 0rem 0rem 3rem 0rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+}
+
+.btn-primary:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  -webkit-transition: -webkit-box-shadow .15s ease-out;
+  transition: -webkit-box-shadow .15s ease-out;
+  transition: box-shadow .15s ease-out;
+  transition: box-shadow .15s ease-out,-webkit-box-shadow .15s ease-out;
+  -webkit-box-shadow: 0 0 0 0 #aaaaac;
+  box-shadow: 0 0 0 0 #aaaaac;
+}
+

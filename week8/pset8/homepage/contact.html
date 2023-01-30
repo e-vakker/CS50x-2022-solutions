@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- My style CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!--Title-->
+    <title>Contact</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('#send-message').addEventListener('click', function () {
+                let input = document.querySelectorAll('input');
+                let textarea = document.querySelector('textarea');
+                if (Boolean(input[0].value) == true && Boolean(input[1].value) == true && Boolean(input[2].value) == true && Boolean(textarea.value) == true) {
+                    document.querySelector('#status').innerHTML = 'Your message has been successfully sent. We will contact you very soon!';
+                }
+                else {
+                    document.querySelector('#status').innerHTML = 'Please use all forms!';
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <div class="cloud">***///CS50 PSET8///***///CS50 PSET8///***///CS50 PSET8///***///CS50 PSET8///***</div>
+        </div>
+        <div>
+            <h1 class="logo">Homepage</h1>
+        </div>
+        <menu class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about-me.html">About me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="hobby.html">Hobby</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+        </menu>
+        <section class="mb-4">
+            <div class="top-cover center-block">
+                <h2 class="header-for-page">Contact me</h2>
+                <div class="row">
+                    <form class="contact-form" name="contact-form">
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="name" class="">Your name</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="email" class="">Your email</label>
+                                    <input type="text" id="email" name="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message">Your message</label>
+                            <textarea id="message" name="message" rows="2"
+                                class="form-control md-textarea"></textarea>
+                        </div>
+                    </form>
+                    <div class="text-center text-md-left">
+                        <a id="send-message" class="btn btn-primary">Send</a>
+                    </div>
+                    <div id="status" style="text-align: center; padding: 1rem"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">Homepage for PSET8 by Jevgeni Vakker</div>
+    </footer>
+</body>
+
+</html>

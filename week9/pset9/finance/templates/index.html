@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+<h1 class="green">Total: {{ total_cash }}</h1>
+<h2>Cash: {{ cash }}</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Stocks</th>
+            <th>Numbers of shares</th>
+            <th>Price</th>
+            <th>Total price</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for stock in table_index %}
+        <tr>
+            <th>{{ table_index[loop.index0]["stocks"] }}</th>
+            <th>{{ table_index[loop.index0]["numbers_of_shares"] }}</th>
+            <th>{{ table_index[loop.index0]["price"] }}</th>
+            <th>{{ table_index[loop.index0]["total_price"] }}</th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
