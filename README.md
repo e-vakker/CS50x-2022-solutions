@@ -1,4 +1,4 @@
-# CS50x 2022 🎓 Introduction to Computer Science Solutions
+# CS50x 2022 🎓 Solutions
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/93353925/215539945-c015226e-f153-41ca-97c8-80a69fac3267.jpg" width="400" />
