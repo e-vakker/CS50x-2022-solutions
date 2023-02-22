@@ -33,3 +33,4 @@ https://cs50.harvard.edu/x/2022/honesty/
 - [Week 9: Flask](week9/)
   - [Lab 9](week9/lab9)
   - [Problem Set 9](week9/pset9)
+- [Final Project](https://github.com/e-vakker/magic-8)
