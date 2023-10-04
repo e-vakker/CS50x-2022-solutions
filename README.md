@@ -34,3 +34,5 @@ https://cs50.harvard.edu/x/2022/honesty/
   - [Lab 9](week9/lab9)
   - [Problem Set 9](week9/pset9)
 - [Final Project](https://github.com/e-vakker/magic-8)
+## Certificate
+![CS50x](https://github.com/e-vakker/CS50x-2022-solutions/assets/93353925/da8aff25-632e-4991-b3f0-5da762703b99)
